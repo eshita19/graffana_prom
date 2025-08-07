@@ -15,7 +15,8 @@
        - Store => prometheus_http_request_total{code=200, job=prometheus} (Both values are stored as String)
        - Query - prometheus_http_request_total{code=~"2.*", job="prometheus"} => This will work as both code and job are String.
        - Query - prometheus_http_request_total{code=200, job="prometheus"} => this will not work as code is not Float but String.
-    - **Instant Vectors**: https://satyanash.net/software/2021/01/04/understanding-prometheus-range-vectors.html
-       - Allows selection of a set of time series and a single sample value for each at a given timestamp(instant)
-       - Only me
+    - **Instant Vectors**: (https://medium.com/@ahmed.s.farag96/decoding-promql-unraveling-range-vectors-and-instant-vectors-in-prometheus-c1390f650e5c)
+       - From its name, it basically gives you an instant in time for the metrics values (the last scrapped value for each metric to be specific, as shown in the diagram below)
+    - **Range Vectors**
+       -  It gives us metrics values within the specified time range. 
          
