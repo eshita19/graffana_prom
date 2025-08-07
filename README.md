@@ -14,4 +14,7 @@
        - Store => prometheus_http_request_total{code=200, job=prometheus} (Both values are stored as String)
        - Query - prometheus_http_request_total{code=~"2.*", job="prometheus"} => This will work as both code and job are String.
        - Query - prometheus_http_request_total{code=200, job="prometheus"} => this will not work as code is not Float but String.
+    - **Instant Vectors**: https://satyanash.net/software/2021/01/04/understanding-prometheus-range-vectors.html
+       - Allows selection of a set of time series and a single sample value for each at a given timestamp(instant)
+       - Only me
          
