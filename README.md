@@ -4,4 +4,9 @@
 - Prometheus web url : http://localhost:9090
 - **Node exporter**:
    - The Node Exporter is an agent that gathers system metrics and exposes them in a format which can be ingested by Prometheus.
-   - 
+   - **Data Model**:
+     - Stores data as time series.
+     - Time series has Metric name and Labels.
+     - Each label is a Key/Value pair.
+     - <metric name>{Key=value, key=value,..}
+     - 
