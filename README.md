@@ -6,6 +6,7 @@
    - The Node Exporter is an agent that gathers system metrics and exposes them in a format which can be ingested by Prometheus.
    - **Data Model**:
      - Stores data as time series.
+     - Time-series data represents information that changes over time and is sampled at specific points in time (depending on when exactly Prometheus will be pulling metrics from its targets). 
      - Time series has Metric name and Labels.
      - Each label is a Key/Value pair.
      - <metric name>{Key=value, key=value,..}
