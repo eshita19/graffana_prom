@@ -9,4 +9,9 @@
      - Time series has Metric name and Labels.
      - Each label is a Key/Value pair.
      - <metric name>{Key=value, key=value,..}
-     - 
+  - **Data types**:
+    - ***Scalar*** - Float or String
+       - Store => prometheus_http_request_total{code=200, job=prometheus} (Both values are stored as String)
+       - Query - prometheus_http_request_total{code=~"2.*", job="prometheus"} => This will work as both code and job are String.
+       - Query - prometheus_http_request_total{code=200, job="prometheus"} => this will not work as code is not Float but String.
+         
