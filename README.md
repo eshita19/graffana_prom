@@ -20,6 +20,11 @@
     - **Range Vectors**: https://www.metricfire.com/blog/understanding-the-prometheus-rate-function/
        -  It gives us metrics values within the specified time range.
      
+## Artithmetic operators(+, -, /, *, %, ^)
+  - **Scalar + instant vector** - Applies to every value of an instant vector. prometheus_sd_updates_total{name=~"^[a-z]*$"} + 10
+  - **instant + instant vector**- Applies to every value of left vector and its matching value in right vector(intersection)
+
+    
   - **Label Matcher**:  
      -  =: Select labels that are exactly equal to the provided string.
      - !=: Select labels that are not equal to the provided string.
