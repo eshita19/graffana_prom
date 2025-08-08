@@ -18,5 +18,10 @@
     - **Instant Vectors**: (https://medium.com/@ahmed.s.farag96/decoding-promql-unraveling-range-vectors-and-instant-vectors-in-prometheus-c1390f650e5c)
        - From its name, it basically gives you an instant in time for the metrics values (the last scrapped value for each metric to be specific, as shown in the diagram below)
     - **Range Vectors**: https://www.metricfire.com/blog/understanding-the-prometheus-rate-function/
-       -  It gives us metrics values within the specified time range. 
-         
+       -  It gives us metrics values within the specified time range.
+     
+  - **Label Matcher**:  
+     -  =: Select labels that are exactly equal to the provided string.
+     - !=: Select labels that are not equal to the provided string.
+     - =~: Select labels that regex-match the provided string.
+     - !~: Select labels that do not regex-match the provided string.        
