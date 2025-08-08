@@ -17,6 +17,6 @@
        - Query - prometheus_http_request_total{code=200, job="prometheus"} => this will not work as code is not Float but String.
     - **Instant Vectors**: (https://medium.com/@ahmed.s.farag96/decoding-promql-unraveling-range-vectors-and-instant-vectors-in-prometheus-c1390f650e5c)
        - From its name, it basically gives you an instant in time for the metrics values (the last scrapped value for each metric to be specific, as shown in the diagram below)
-    - **Range Vectors**
+    - **Range Vectors**: https://www.metricfire.com/blog/understanding-the-prometheus-rate-function/
        -  It gives us metrics values within the specified time range. 
          
