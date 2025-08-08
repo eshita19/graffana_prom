@@ -34,8 +34,8 @@
    - or - Returns union
    - unless - Returns rows which doesnt exist in second vector.
 
-### Label Matchers and Selectors **:  
-     -  =: Select labels that are exactly equal to the provided string.
-     - !=: Select labels that are not equal to the provided string.
-     - =~: Select labels that regex-match the provided string.
-     - !~: Select labels that do not regex-match the provided string.        
+### Label Matchers and Selectors :  
+   -  =: Select labels that are exactly equal to the provided string.
+   - !=: Select labels that are not equal to the provided string.
+   - =~: Select labels that regex-match the provided string.
+   - !~: Select labels that do not regex-match the provided string.        
