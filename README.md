@@ -38,4 +38,9 @@
    -  =: Select labels that are exactly equal to the provided string.
    - !=: Select labels that are not equal to the provided string.
    - =~: Select labels that regex-match the provided string.
-   - !~: Select labels that do not regex-match the provided string.        
+   - !~: Select labels that do not regex-match the provided string.
+     
+## Aggregation operator:
+- Aggregates the elemetnts of a single instant vector.
+- Syntax: Agg_Operator(instant_vector)
+- Syntax: Agg_Operator(instant_vector) by (label1, label2, ....) 
