@@ -43,4 +43,5 @@
 ## Aggregation operator:
 - Aggregates the elemetnts of a single instant vector.
 - Syntax: Agg_Operator(instant_vector)
-- Syntax: Agg_Operator(instant_vector) by (label1, label2, ....) 
+- Syntax: Agg_Operator(instant_vector) by (label1, label2, ....)
+- Syntax: Agg_Operator(instant_vector) without (label1, label2, ....)
