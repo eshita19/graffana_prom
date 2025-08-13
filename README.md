@@ -1,7 +1,7 @@
 ## Prometheus
-- Install prometheus : brew install prometheus
-- Start prometheus: brew services start prometheus
-- Prometheus web url : http://localhost:9090
+- Install prometheus : brew install prometheus, brew install node_exporter
+- Start prometheus: brew services start prometheus, brew services start node_exporter
+- Prometheus web url : http://localhost:9090, Node exporter- http:localhost:9100,  Grafana- http://localhost:3000
 - **Node exporter**:
    - The Node Exporter is an agent that gathers system metrics and exposes them in a format which can be ingested by Prometheus.
    - **Data Model**:
@@ -45,3 +45,10 @@
 - Syntax: Agg_Operator(instant_vector)
 - Syntax: Agg_Operator(instant_vector) by (label1, label2, ....)
 - Syntax: Agg_Operator(instant_vector) without (label1, label2, ....)
+- Agg operator for instant vector : sum, min, max, avg, count_values, topk, bottomk, stddev, stdvar
+- Agg operator for range vector: sum_over_time, min_over_time, max_over_time, avg_over_time, topk_over_time, bottomk_over_time, stddev_over_time, stddev_over_time
+- 
+
+## Time Offsets:
+- instant_vector offset time
+
